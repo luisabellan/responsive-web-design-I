@@ -1,3 +1,412 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+body{
+
+	margin: 0 10%;
+}
 
 
+button{
+	display: block;
+	background-color: white;
+	border: 1px solid black;
+	padding: 3px 25px;
+
+}
+
+
+
+/* Give the navigation a background color and have
+	*it be fixed to the top of the page so that it scrolls
+	*with the user. You will want to study what z-index
+   	*means in case you encounter any issues when you scroll. 
+*/
+header nav {
+	list-style-type: none;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	display: inline-block;
+	background-color: rgb(31, 63, 202);
+	height: 8%;
+	width: 100%;
+	margin-bottom: 0;
+	padding: 0;
+	z-index: 1;
+	
+
+}
+
+
+
+header nav a{
+	color: gray;
+	text-decoration: none;
+	margin-right: 5%;
+	margin-left: 5%;
+
+
+}
+/* stretch animation for a:hovers in the menu*/
+@keyframes border{
+	from{
+		border-bottom: 0px dashed gray;
+		
+	}
+	to{
+		border-bottom: 4px solid gray;
+
+	}
+}
+
+/* stretch: Research CSS animations and see how you could implement some ideas when hovering over buttons or navigation items */
+header nav a:hover{
+
+	border-bottom: 4px solid gray;
+	animation-name: border;
+	animation-iteration-count:initial;
+	animation-duration: 1s;
+}
+
+header h1{
+	
+	font-size: 300%;
+	display: block;
+}
+header nav img.logo {
+	display: inline-block;
+
+	
+	
+	
+}
+
+
+header button{
+	display: inline-block;
+	
+}
+
+#jumbo{
+	display: block;
+	color: black;
+	margin: 0 0 0 0;
+}
+#jumbo h1{
+	font-size: 400%;
+	text-align: center;
+	
+}
+#jumbo button{
+	margin: 0 auto;
+}
+
+#jumbo-left{
+	
+	display: inline-block;
+	vertical-align: bottom;
+	text-align: center;
+	width: 30%;
+	margin-bottom: 10%;
+	
+}
+
+
+
+#jumbo-right{
+	
+	display: inline-block;
+	vertical-align: baseline;
+	width:60%;
+	max-width: 30%;
+	padding-top: 5%;
+	margin-top: 10%;
+	margin-left: 20%;
+}
+
+#jumbo-right img {
+	
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 20%;
+	
+}
+
+
+.middle-img{
+	display: inline-block;
+	width: 100%;
+}
+body>section{
+	clear: both;
+	
+}
+
+
+
+
+
+#first-section{
+	display: block;
+	border-top: 1px solid gray; 
+	color: black;
+	margin-bottom: 3%;
+	clear: both;
+
+	
+	
+
+}
+
+
+
+#first-section-left{
+	display: inline-block;
+	width: 46%;
+	color: black;
+	margin-top: 5%;
+	margin-right: 4%;
+}
+
+#first-section-right{
+	display: inline-block;
+	width: 46%;
+	color: black;
+	margin-top: 0%;
+
+}
+
+
+
+#second-section{
+	border-bottom: 1px solid gray;
+	padding-bottom: 3%;
+	margin-bottom: 2%;
+	margin-top: 3%;
+	color: black;
+
+	
+}
+#second-section-left{
+	width: 30%;
+	display: inline-block;
+	color: black;
+	margin-right: 3%;
+
+}
+
+#second-section-middle{
+	width: 30%;
+	display: inline-block;
+	color: black;
+	margin-right: 3%;
+
+}
+
+#second-section-right{
+	width: 30%;
+	display: inline-block;
+	margin-top: 3%;
+	color: black;
+	margin-bottom: 3%
+
+}
+
+
+#contact{
+	display: inline-block;
+	margin-top: 3%;
+
+	
+}
+
+#contact a{
+
+list-style-type: none;
+color: black;
+text-decoration: none;
+}
+
+footer{
+	margin: 12% 0 6% 0;
+	clear: both;
+	text-align: center;
+}
+
+
+@media (max-width: 800px) {
+
+    #first-header-nav{
+        display: flex;
+        justify-content: flex-start wrap;
+    }
+
+}
+
+
+
+
+@media (max-width: 500px) {
+
+    body {
+        max-width: 800px;
+
+    }
+
+}
+
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { }
+ 
+@media all and (max-width: 480px) { }
+ 
+/*------------------------------------------
+  Foundation Media Queries 
+   http://foundation.zurb.com/docs/media-queries.html
+--------------------------------------------*/
+ 
+/* Small screens - MOBILE */
+@media only screen { } /* Define mobile styles - Mobile First */
+ 
+@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+ 
+/* Medium screens - TABLET */
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+ 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+ 
+/* Large screens - DESKTOP */
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+ 
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+ 
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+ 
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+ 
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
+ 
+/*------------------------------------------*/
+ 
+ 
+ 
+/* Portrait */
+@media screen and (orientation:portrait) { /* Portrait styles here */ }
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }
+ 
+ 
+/* CSS for iPhone, iPad, and Retina Displays */
+ 
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+ 
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+ 
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+} 
+ 
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+}
+ 
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+}
+ 
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+}
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+
+/*------------------------------------------
+  Live demo samples
+   - http://andrelion.github.io/mediaquery/livedemo.html
+--------------------------------------------*/
