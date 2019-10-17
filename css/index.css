@@ -188,12 +188,12 @@ button:hover {
 		*with the user. You will want to study what z-index
 		*means in case you encounter any issues when you scroll. 
 	*/
-header nav {
+#first-header-nav {
     list-style-type: none;
     position: fixed;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center safe;
     align-items: center;
     width: 100%;
     margin: 0;
@@ -203,21 +203,33 @@ header nav {
 
 }
 
+#nav-bar-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 2;
+    margin-left: 20px;
+    order: 1;
+}
 
-
-header nav a {
+#nav-bar-left a {
     color: gray;
+    flex: 1;
     text-decoration: none;
     margin-left: 0%;
     margin-right: 80px;
+    display: flex;
 
 
 }
-
-header nav img {
+#nav-bar-right {
+    margin-right: 30px;
+    flex: 1;
+    order: 2;
+}
+#nav-bar-right a {
     align-self: center;
     margin-bottom: 2%;
-    animation: none;
 }
 
 @keyframes border {
@@ -233,7 +245,7 @@ header nav img {
 }
 
 /* stretch: Research CSS animations and see how you could implement some ideas when hovering over buttons or navigation items */
-header nav a:hover {
+#nav-bar-left a:hover {
 
     border-bottom: 4px solid gray;
     animation-name: border;
@@ -245,7 +257,7 @@ header nav a:hover {
 
 #jumbo {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     color: black;
 
 
@@ -256,11 +268,12 @@ header nav a:hover {
 #jumbo-left {
 
     display: flex;
+    flex: 2;
     justify-content: center;
     flex-flow: column nowrap;
     align-items: center;
+    align-self: center;
     vertical-align: bottom;
-    width: 50%;
 
 
 }
@@ -281,14 +294,14 @@ header nav a:hover {
 
 #jumbo-right {
     display: flex;
-    width: 50%;
-    margin-top: 8%;
+    flex:1;
+
+    margin-top: 10%;
     margin-bottom: 4%;
 }
 
 #jumbo-right img {
-    display: flex;
-    margin-bottom: 10%
+    
 }
 
 
@@ -315,6 +328,8 @@ header nav a:hover {
     justify-content: space-around;
     border-top: 1px solid gray;
     color: black;
+    margin:  3%;
+    padding-top: 3%;
 
 }
 
@@ -324,17 +339,17 @@ header nav a:hover {
     display: flex;
     flex-direction: column;
     color: black;
-    width: 42%;
-    margin: 3%;
+    flex:1;
+    
 }
 
 
 #first-section-right {
     display: flex;
     flex-direction: column;
-    width: 47%;
+    flex:1;
     color: black;
-    margin: 3%;
+    
 
 }
 
@@ -343,12 +358,12 @@ header nav a:hover {
 #second-section {
     display: flex;
     flex-direction: row;
-    ;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     border-bottom: 1px solid gray;
     color: black;
-    margin: 3%;
+    margin:  3%;
+    padding-bottom: 3%;
 
 }
 
@@ -357,8 +372,7 @@ header nav a:hover {
     flex-direction: column;
     color: black;
     order: 1;
-    margin-right: 3%;
-    margin-bottom: 3%;
+    flex: 1;
 
 }
 
@@ -366,9 +380,8 @@ header nav a:hover {
     display: flex;
     flex-direction: column;
     color: black;
+    flex: 1;
     order: 2;
-    margin-right: 3%;
-    margin-bottom: 3%;
 
 }
 
@@ -378,9 +391,8 @@ header nav a:hover {
     display: flex;
     flex-direction: column;
     color: black;
+    flex: 1;
     order: 3;
-    margin-right: 3%;
-    margin-bottom: 3%;
 
 }
 
@@ -409,28 +421,17 @@ footer {
 
 
 
-@media (max-width:800px) {
+@media (max-width:1030px) {
 
-    header nav {
-        list-style-type: none;
-        position: fixed;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
+    .container {
+    }
+    #first-header-nav-bar{
 
 
     }
-
-    header nav a {
-
-        align-items: center;
-        margin-right: 10px;
-
-    }
-
     #jumbo {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
         justify-content: space-around;
         margin: 0 0;
 
@@ -447,13 +448,9 @@ footer {
     }
 
     #jumbo-right {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: 50%;
-        margin-bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
+     
+     
+        
 
     }
 
@@ -606,50 +603,43 @@ footer {
         width: 47%;
 
 
-    }
+    }  
 }
 
 
-@media (max-width:500) {
 
+ @media (max-width:800px){
+  
     .container {
-
-        width: 500px;
+        
     }
+    #first-header-nav-bar{
 
-    header {}
-
-    header nav {
-        display: flex;
-        flex-direction: column wrap;
-        align-items: center;
 
     }
 
-    #first-header-nav {
+    #jumbo-right {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 50%;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        
 
     }
 
-    #first-header-nav a {
+   
+} 
 
-        width: 100%;
-        text-align: center;
-        align-items: center;
-        width: 100%;
-        ;
-    }
-
-
-
-
-    #nav-bar-left a {
-        width: 100%;
-        text-align: center;
-    }
-
-    #jumbo-right img {
+@media (max-width:500) {
+    #jumbo-right {
+     
         display: none;
-    }
+
+        
+
+    };
 }

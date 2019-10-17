@@ -1,48 +1,59 @@
 /* services.html styles */
 
-body{
 
- 
-}
 
 .container {
 
     width: 100%;
 
 }
-header nav {
-    list-style-type: none;
-    top: 0;
-    position: fixed;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgb(31, 63, 202);
-    height: 10%;
-    z-index: 1;
+    #first-header-nav {
+    
+    }
+    
+    #nav-bar-left{
+      
+    }
+    
+    #nav-bar-left a {
+       
+    
+    }
+    #nav-bar-right {
+        margin-right: 30px;
+    }
+    #nav-bar-right a {
+        align-self: center;
+        margin-bottom: 2%;
+        animation: none;
+    }
 
 }
 
+#nav-bar-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 2;
+}
 
-
-header nav a {
+#nav-bar-left a {
     color: gray;
     text-decoration: none;
     margin-left: 0%;
     margin-right: 80px;
-    font-size: 130%;
+    display: flex;
 
 
 }
-
-header nav img {
+#nav-bar-right {
+    margin-right: 30px;
+}
+#nav-bar-right a {
     align-self: center;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     animation: none;
-    margin-top: 20px;
+}
 }
 
 @keyframes border {
@@ -200,7 +211,7 @@ img.services-info-img{
     header nav{
         position: fixed;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column-reverse nowrap;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -214,7 +225,7 @@ img.services-info-img{
         width: 100%;
     }
     header nav img {
-        order: -1;
+      
     }
 }
 
