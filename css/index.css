@@ -283,6 +283,27 @@ button:hover {
         margin: auto;
     }
 
+    .jumbo-left button {
+        margin-bottom: 15%;
+    }
+
+    .sections h2{
+        margin-top: 15%;
+
+    }
+
+    .second-section h2 {
+        margin-top: 15%;
+
+    }
+
+    .second-section {
+        border-bottom: 4px solid black;
+    }
+
+    /* .contact{
+        border-top: 2px solid black;
+    } */
 }
 
 
