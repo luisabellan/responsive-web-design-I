@@ -247,7 +247,7 @@ button:hover {
 
 .navbar-left a:hover {
 
-    );
+    
     animation-name: none;
 
 }
@@ -470,12 +470,16 @@ section p {
 
     .navbar{
         flex-direction: column-reverse;
+        height: 12%;
     }
    .navbar-left a {
         flex-flow: column-reverse wrap;
         margin: 10%;
         text-align: center;
         width: 100%;
+    }
+    .navbar-right{
+        margin-top: 5%;
     }
 
     .second-section {
