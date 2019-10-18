@@ -121,7 +121,8 @@ img.services-header-img{
 	flex-flow: row wrap;
 	justify-content: space-around;
     flex:1;
-    margin-top: 10%;
+    margin-top: 2%;
+    
 }
 
 
@@ -150,13 +151,14 @@ img.services-header-img{
 	justify-content: space-around;
 	border-top: 1px solid black;
     flex:1;
-	margin-right: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
 	
 }
 
 
 .section-bottom h2{
-margin-top: 5%;
+margin-top: 20%;
 }
 
 
@@ -175,35 +177,6 @@ img.services-info-img{
 	width: 47%;
 }
 
-@media (max-width:800px)  {
-    
-    .navbar{
-        width: 100%;
-    }
-
-    .navbar a{
-        width: 100%;
-
-    }
-    .nav-bar-left a {
-        margin: 0;
-        width: 100%;
-    }
-
-    .navbar img{
-        
-        order: 1;
-    }
-    .section-top{
-        margin-top : 60%;
-    }
-
-
-
-    .section-top{
-        margin: 5% 4%;
-    }
-}
 
 
  @media (max-width:800){
@@ -219,19 +192,81 @@ img.services-info-img{
         width: 100%;
     }
 
-    @media (max-width:500){
-
-
+    @media (max-width:500px) and (min-width:0px) {
+ 
         .container{
-
-            flex-direction: column;;
+            width: 500px;
         }
-        .nav-bar-left a {
-
+        
+       nav.navbar {
+        position: relative;
         display: flex;
-        align-self: center;
-        text-align: center;
-        margin: 20% auto;
+        flex-flow: column-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(31, 63, 202);
+       }
+    
+        nav.navbar div.navbar-left {
+            
+            align-self: center;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 100%;
+            order: 1;
+        }
+    
+        nav.navbar div.navbar-left a {
+            box-sizing: content-box;
+            justify-content: center;
+            padding-left: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            border-top: 1px solid rgb(77, 75, 75);
+            padding-top: 5%;
+            padding-bottom: 2%;
+    
+            
+          
+        }
+        nav.navbar div.navbar-right {
+            width: auto;
+            order: 2;
+        }
+    
+        div.navbar-right a {
+            
+            align-self: center;
+            width: 100%;
+            margin: auto;
+        }
+    
+        .jumbo-left button {
+            margin-bottom: 15%;
+        }
+    
+        .sections h2{
+            margin-top: 15%;
+    
+        }
+    
+        .second-section h2 {
+            margin-top: 15%;
+    
+        }
+    
+        .second-section {
+            border-bottom: 4px solid black;
+        }
+    
+        /* .contact{
+            border-top: 2px solid black;
+        } */
     }
       
     
