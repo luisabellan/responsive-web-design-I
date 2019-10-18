@@ -556,6 +556,9 @@ section p {
         margin-bottom: 15%;
     }
 
+    .first-section, .second-section{
+        flex-direction: column;
+    }
     .sections h2{
         margin-top: 15%;
 
