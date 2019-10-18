@@ -207,7 +207,6 @@ body {
         flex-direction: row;
         justify-content: space-around;
         flex: 2;
-        margin-left: 20px;
         order: 1;
     }
 
@@ -456,11 +455,21 @@ body {
 
         #first-header-nav {
         
-            flex-flow: column-reverse wrap safe;
+            flex-flow: column-reverse nowrap;
             width:100%;
         
         }
+        #first-header-nav a {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-flow: column nowrap;
+            align-self: center;
+            margin: auto;
+            width: 100%;
 
+        
+        }
         #second-section{
             flex-direction: column;
 
@@ -484,7 +493,7 @@ body {
     }
 
 
-    @media (max-width:500) {
+    @media (max-width:500){
 
         .container nav{
             display: none;
