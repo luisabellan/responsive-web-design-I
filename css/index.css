@@ -166,7 +166,7 @@ body {
 }
 
 .container{
-    
+    max-width: 100%
 }
 
 button {
@@ -415,8 +415,6 @@ footer {
 
 /* margins*/
 
-
-
 .first-section p {
     margin-right: 6%;
     margin-bottom: 3%;
@@ -427,11 +425,12 @@ section p {
     margin-bottom: 3%;
 }
 
-
-
 .second-section p {
     margin-right: 6%;
 }
+
+
+/* Media Queries*/
 
 /*desktop */
 @media (max-width:1024px) {
@@ -499,7 +498,10 @@ section p {
     }
 
 
-}/* mobile*/
+}
+
+
+/* mobile*/
 @media (max-width:500px) and (min-width:0px) {
  
     .container{
