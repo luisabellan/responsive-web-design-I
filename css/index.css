@@ -148,38 +148,38 @@ body {
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Bangers', cursive;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
 
 
 
 
 
-body {
+    body {
 
-    margin: 0;
-}
+        margin: 0;
+    }
 
 
 
-button {
-    background-color: white;
-    border: 1px solid black;
-    padding: 3px 25px;
+    button {
+        background-color: white;
+        border: 1px solid black;
+        padding: 3px 25px;
 
-}
+    }
 
-button:hover {
-    background: rgb(75, 75, 207);
-    color: white;
-}
+    button:hover {
+        background: rgb(75, 75, 207);
+        color: white;
+    }
 
 
 
@@ -188,312 +188,29 @@ button:hover {
 		*with the user. You will want to study what z-index
 		*means in case you encounter any issues when you scroll. 
 	*/
-#first-header-nav {
-    list-style-type: none;
-    position: fixed;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center safe;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    background-color: rgb(31, 63, 202);
-    height: 10%;
-    z-index: 1;
-
-}
-
-#nav-bar-left{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex: 2;
-    margin-left: 20px;
-    order: 1;
-}
-
-#nav-bar-left a {
-    color: gray;
-    flex: 1;
-    text-decoration: none;
-    margin-left: 0%;
-    margin-right: 80px;
-    display: flex;
-
-
-}
-#nav-bar-right {
-    margin-right: 30px;
-    flex: 1;
-    order: 2;
-}
-#nav-bar-right a {
-    align-self: center;
-    margin-bottom: 2%;
-}
-
-@keyframes border {
-    from {
-        border-bottom: 0px dashed gray;
-
-    }
-
-    to {
-        border-bottom: 4px solid gray;
-
-    }
-}
-
-/* stretch: Research CSS animations and see how you could implement some ideas when hovering over buttons or navigation items */
-#nav-bar-left a:hover {
-
-    border-bottom: 4px solid gray;
-    animation-name: border;
-    animation-iteration-count: initial;
-    animation-duration: 1s;
-}
-
-
-
-#jumbo {
-    display: flex;
-    justify-content: center;
-    color: black;
-
-
-}
-
-
-
-#jumbo-left {
-
-    display: flex;
-    flex: 2;
-    justify-content: center;
-    flex-flow: column nowrap;
-    align-items: center;
-    align-self: center;
-    vertical-align: bottom;
-
-
-}
-
-#jumbo-left h1 {
-
-    font-size: 400%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-
-/* #jumbo-left .button{
-		
-	
-	*/
-
-#jumbo-right {
-    display: flex;
-    flex:1;
-
-    margin-top: 10%;
-    margin-bottom: 4%;
-}
-
-
-
-.middle-img {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 100%;
-}
-
-
-
-/* Sections */
-
-#sections {
-
-    display: flex;
-    justify-content: center;
-
-}
-
-#first-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-top: 1px solid gray;
-    color: black;
-    margin:  3%;
-    padding-top: 3%;
-
-}
-
-
-
-#first-section-left {
-    display: flex;
-    flex-direction: column;
-    color: black;
-    flex:1;
-    
-}
-
-
-#first-section-right {
-    display: flex;
-    flex-direction: column;
-    flex:1;
-    color: black;
-    
-
-}
-
-
-
-#second-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    border-bottom: 1px solid gray;
-    color: black;
-    margin:  3%;
-    padding-bottom: 3%;
-
-}
-
-#second-section-left {
-    display: flex;
-    flex-direction: column;
-    color: black;
-    order: 1;
-    flex: 1;
-
-}
-
-#second-section-middle {
-    display: flex;
-    flex-direction: column;
-    color: black;
-    flex: 1;
-    order: 2;
-
-}
-
-
-
-#second-section-right {
-    display: flex;
-    flex-direction: column;
-    color: black;
-    flex: 1;
-    order: 3;
-
-}
-
-
-#contact {
-    display: flex;
-    flex-flow: column nowrap;
-    margin-left: 3%;
-
-
-}
-
-#contact a {
-
-    list-style-type: none;
-    color: black;
-    text-decoration: none;
-}
-
-footer {
-    margin: 12% 0 6% 0;
-    clear: both;
-    text-align: center;
-}
-
-
-/* margins*/
-
-#first-section {
-    flex-basis: 100%;    
-}
-
-#first-section p {
-    margin-right: 6%;
-}
-
-#second-section {
-    flex-basis: 100%;    
-}
-
-#second-section p {
-    margin-right: 6%;
-} 
-
-
-@media (max-width:1024px) {
-
-    .container {
-    }
-    
     #first-header-nav {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-    }
-}
-
-
-
- @media (max-width:800px){
-
-
-    #first-header-nav {
-      
-        flex-flow: column-reverse wrap;
-       
-    
-    }
-
-    #jumbo {
-        flex-flow: row wrap;
-    }
-   
- }
-
- @media (max-width:500) {
-
-    .container {
-        width: 500px;
-
-    }
-    #first-header-nav {
-        list-style-type: none;
         position: fixed;
         display: flex;
         flex-flow: row wrap;
-        justify-content: center safe;
+        justify-content: center;
         align-items: center;
         width: 100%;
         margin: 0;
         background-color: rgb(31, 63, 202);
         height: 10%;
         z-index: 1;
-    
+
     }
-    
+
     #nav-bar-left{
         display: flex;
-        flex-direction: row wrap;
+        flex-direction: row;
         justify-content: space-around;
         flex: 2;
         margin-left: 20px;
         order: 1;
     }
-    
+
     #nav-bar-left a {
         color: gray;
         flex: 1;
@@ -501,59 +218,277 @@ footer {
         margin-left: 0%;
         margin-right: 80px;
         display: flex;
-    
-    
-    }
-
-  
-    
-    #nav-bar-left{
-
-        flex-direction: column;
-
 
 
     }
-    #nav-bar-left a{
-        flex-basis: 10%;
-        margin-right: 1%;
-        border: 3px solid black;
-
+    #nav-bar-right {
+        margin-right: 30px;
+        flex: 1;
+        order: 2;
     }
-    
-    #second-section{
-        display: flex;
-        flex-flow: column;
-        flex-basis: 100%;
-
-    
+    #nav-bar-right a {
+        align-self: center;
+        margin-bottom: 2%;
     }
 
-    #second-section-left{
-        width: 100%;
-        order: ;
-        margin: auto;
+    @keyframes border {
+        from {
+            border-bottom: 0px dashed gray;
+
+        }
+
+        to {
+            border-bottom: 4px solid gray;
+
+        }
     }
 
+    #nav-bar-left a:hover {
 
-  
+        border-bottom: 4px solid rgb(169, 184, 235);
+        animation-name: border;
+        animation-iteration-count: initial;
+        animation-duration: 1s;
+    }
+
 
 
     #jumbo {
-        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        color: black;
+
+
     }
 
 
-    #jumbo-right  {
-     
+
+    #jumbo-left {
+
+        display: flex;
+        flex: 2;
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-items: center;
+        align-self: center;
+        vertical-align: bottom;
+
+
+    }
+
+    #jumbo-left h1 {
+
+        font-size: 400%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+    .jumbo-right {
+        flex:1;
+        margin-top: 10%;
+        margin-bottom: 4%;
+    }
+
+
+
+    .middle-img {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 100%;
+    }
+
+
+
+    /* Sections */
+
+    #sections {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #first-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-top: 1px solid gray;
+        color: black;
+        flex: 1;
+        margin:  3%;
+        padding-top: 3%;
+
+    }
+
+
+
+    #first-section-left {
+        display: flex;
+        flex-direction: column;
+        color: black;
+        flex:1;
+        
+    }
+
+
+    #first-section-right {
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        color: black;
         
 
+    }
+
+
+
+    #second-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        border-bottom: 1px solid gray;
+        color: black;
+        margin:  3%;
+        padding-bottom: 3%;
+
+    }
+
+    #second-section-left {
+        display: flex;
+        flex-direction: column;
+        color: black;
+        order: 1;
+        flex: 1;
+
+    }
+
+    #second-section-middle {
+        display: flex;
+        flex-direction: column;
+        color: black;
+        flex: 1;
+        order: 2;
+
+    }
+
+
+
+    #second-section-right {
+        display: flex;
+        flex-direction: column;
+        color: black;
+        flex: 1;
+        order: 3;
+
+    }
+
+
+    #contact {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-left: 3%;
+
+
+    }
+
+    #contact a {
+
+        list-style-type: none;
+        color: black;
+        text-decoration: none;
+    }
+
+    footer {
+        margin: 12% 0 6% 0;
+        clear: both;
+        text-align: center;
+    }
+
+
+    /* margins*/
+
+  
+
+    #first-section p {
+        margin-right: 6%;
+        margin-bottom: 3%;
         
-
     }
 
-    #jumbo-left{
-        display: none;
-
+    section p {
+        margin-bottom: 3%;
     }
-}
+
+    
+
+    #second-section p {
+        margin-right: 6%;
+    } 
+
+
+    @media (max-width:1024px) {
+
+        .container {
+            flex-flow: row nowrap;
+
+        }
+        
+        #first-header-nav {
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+        }
+
+    
+    }
+
+
+
+    @media (max-width:800px){
+
+        .container {
+            width: 100%;
+
+        }
+
+        #first-header-nav {
+        
+            flex-flow: column-reverse wrap safe;
+            width:100%;
+        
+        }
+
+        #second-section{
+            flex-direction: column;
+
+        }
+        
+        #first-section{
+            flex-direction: column;
+
+        }
+
+        #jumbo {
+            flex-flow: row wrap;
+            padding-top: 20%;
+        }
+
+        #jumbo-right {
+            display: flex;
+        }
+       
+    
+    }
+
+
+    @media (max-width:500) {
+
+       
+
+       .container #jumbo #jumbo-right {
+            display: none ;
+        }
+    }

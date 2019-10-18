@@ -40,8 +40,8 @@
 #nav-bar-left a {
     color: gray;
     text-decoration: none;
-    margin-left: 0%;
-    margin-right: 80px;
+    flex: 1;
+    flex-basis: 40%;
     display: flex;
 
 
@@ -176,21 +176,17 @@ img.services-info-img{
 @media (max-width:800px)  {
     
     #first-header-nav{
-        height: 300px;
-        margin: 0 auto;
+        width: 100%;
     }
 
     #first-header-nav a{
-        width: 0.1%;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
-        height: 0%;
+        width: 100%;
 
     }
-
+    #nav-bar-left a {
+        margin: 0;
+        width: 100%;
+    }
 
     #first-header-nav img{
         
@@ -208,8 +204,8 @@ img.services-info-img{
 }
 
 
- @media (max-width:500){
-    #first-header-nav {
+ @media (max-width:800){
+    #nav-bar-left {
         
         position: fixed;
         display: flex;
@@ -222,10 +218,18 @@ img.services-info-img{
     }
 
     @media (max-width:500){
-        a{
+
+
+        .container{
+
+            flex-direction: column;;
+        }
+        #nav-bar-left a {
 
         display: flex;
+        align-self: center;
         text-align: center;
+        margin: 20% auto;
     }
       
     
