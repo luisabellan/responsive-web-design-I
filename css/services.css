@@ -162,8 +162,7 @@ img.services-header-img{
 	justify-content: space-around;
 	border-top: 1px solid black;
     flex:1;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin: 0 0 2% 5%;
 	
 }
 
@@ -196,16 +195,15 @@ div.container{
     width: 800px;
 }
     nav.navbar{
-        flex-direction: column;
+        flex-flow: column-reverse wrap;
+        width: 100%;
     }
     div.navbar-left {
         
         position: fixed;
         display: flex;
-        flex: 1;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
         justify-content: center;
-        
 
         align-items: center;
         width: 100%;
@@ -213,11 +211,14 @@ div.container{
     }
 
     nav.navbar div.navbar-left a{
-        animation: none;
+       
 
     }
 
-    div.navbar-right
+    div.navbar-right{
+        order: 1;
+
+    }
 
     @media (max-width:500px) and (min-width:0px) {
  

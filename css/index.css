@@ -565,19 +565,25 @@ section p {
     .first-section, .second-section{
         flex-direction: column;
     }
+  
+    .first-section-left p, .first-section-right p, .second-section-left p, .second-section-right p,  {
+        margin-right: 0%;
+    }
+
     .sections h2{
-        margin-top: 15%;
+        margin-top: 5%;
 
     }
 
     .second-section h2 {
-        margin-top: 15%;
+        margin-top: 5%;
 
     }
 
     .second-section {
         border-bottom: 4px solid black;
     }
+
 
     /* .contact{
         border-top: 2px solid black;
