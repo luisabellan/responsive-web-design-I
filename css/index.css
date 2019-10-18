@@ -477,7 +477,7 @@ body {
         }
 
         #jumbo-right {
-            display: flex;
+            display: none;
         }
        
     
@@ -486,9 +486,10 @@ body {
 
     @media (max-width:500) {
 
-       
-
-       .container #jumbo #jumbo-right {
-            display: none ;
+        .container nav{
+            display: none;
         }
+       
+        html p{font-size: 20%;}
+       
     }
