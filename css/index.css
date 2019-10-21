@@ -207,7 +207,7 @@ button:hover {
     width: 100%;
     align-items: center;
     background-color: rgb(31, 63, 202);
-    height: 20%;
+    height: 12%;
     z-index: 1;
 
 }
@@ -229,6 +229,13 @@ button:hover {
     
 
 
+}
+/* stretch: Research CSS animations and see how you could implement some ideas when hovering over buttons or navigation items */
+header nav a p:hover {
+
+    animation-name: border;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
 }
 
 
@@ -457,11 +464,13 @@ section p {
     nav.navbar {
         flex-flow: row nowrap;
         justify-content: flex-start;
+
     }
 
     nav.navbar div.navbar-left{
         display: flex;
         flex-flow: row;
+        height: 5%;
     }
 
     nav.navbar div.navbar-left a {
@@ -493,7 +502,7 @@ section p {
 
     nav.navbar{
         flex-flow: column-reverse nowrap;
-        height: 30%;
+        height: 20%;
 
     }
 
@@ -589,7 +598,7 @@ section p {
         width: 100%;
         order:1;
         flex: 1;
-        display: flex; 
+        display: none;  /* hidden in mobile view , click on menu item will show it*/
     }
 
   
@@ -650,23 +659,20 @@ section p {
         
     }
     nav.navbar div.navbar-right .logo {
-        align-self: center;
-        margin-left: 70%;
-        
+        margin-left: 50%;
+        width: 60%;
+        align-self: flex-start;
+        height: 52px;
+        /* flex: 1; */
+    
     }
 
-    nav.navbar div.navbar-right .logo{
 
-    }
-
-    nav.navbar div.navbar-right i {
-        display: flex;
-        margin-right: 20px;
-
-    }
+ 
 
    
     nav.navbar div.navbar-right {
+        
         align-self: flex-start;
         order: 1;
         flex: 1;
@@ -676,7 +682,6 @@ section p {
     }
 
     div.navbar-right div.navbar-right-logo {
-        width: 40%;
         align-self: flex-start;
         height: 52px;
         /* flex: 1; */
@@ -686,20 +691,15 @@ section p {
         text-decoration: none;
 
     }
-    div.navbar-right div.navbar-right-icon {
-        order: 2;
+
+    /*menu icon*/
+
+    nav.navbar div.navbar-right i {
+        display: flex; /* menu icon*/
+        margin-right: 20px;
         width: 40%;
-        flex: 1; 
-        align-self: flex-end;
-        height: 52px;
-        text-decoration: none;
-    }
-    /*delete*/
-    div.navbar-right i{
-        display: flex;
-    }
-    
-    
+
+
     }
     .icon{
         color: black;
@@ -707,8 +707,10 @@ section p {
         display: flex;
         width: 40%;
     }
-
-
+  
+ 
+    
+    
     .jumbo-left button {
         margin-bottom: 15%;
     }

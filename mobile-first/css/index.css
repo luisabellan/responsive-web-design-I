@@ -536,7 +536,7 @@ section p {
 @media (max-width:500px) and (min-width:0px) {
  
     div.container{
-        width: 1000px;
+        width: 100%;
     }
     
    nav.navbar {
@@ -550,7 +550,7 @@ section p {
    }
    .first-section, .second-section{
     flex-direction: column;
-}
+
 
 
     nav.navbar div.navbar-left {
@@ -563,30 +563,6 @@ section p {
         order:1;
     }
 
-    /* nav.navbar div.navbar-left a.first{
-        order:1;
-    }
-
-    nav.navbar div.navbar-left a.second{
-        order:2;
-    }
-
-    nav.navbar div.navbar-left a.third{
-        order:3;
-    }
-
-    nav.navbar div.navbar-left a.fourth{
-        order:4;
-    }
-
-    nav.navbar div.navbar-left a.fifth{
-        order:5;
-    }
-
-    nav.navbar div.navbar-left a.sixth{
-        order:6;
-    }
- */
     
 
 
@@ -612,7 +588,7 @@ section p {
         order: 2;
     }
 
-    div.navbar-right a {
+    nav.navba div.navbar-right a {
         
         align-self: center;
         width: 100%;

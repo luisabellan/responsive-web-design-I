@@ -167,7 +167,7 @@
 
         div.parent {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             
         }
 
@@ -180,12 +180,13 @@
         .navbar {
             position: fixed;
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: row-reverse nowrap;
             justify-content: space-around;
             width: 100%;
             align-items: center;
             background-color: rgb(31, 63, 202);
-            height: 10%;
+            padding-top: 5%;
+            height: 20%;
             z-index: 1;
 
         }
@@ -294,6 +295,8 @@
     }
     @media (max-width:500px) and (min-width:0px) { 
 
+
+
         .section-middle {
         
             flex-flow: column wrap;
@@ -374,8 +377,12 @@
 
     @media (max-width:800px){
 
-        div.container{
-        width: 100%;
+        div.parent{
+            width: 100%;
+
+            flex-flow: column nowrap;
+        }
+
         }
         nav.navbar{
             flex-flow: column-reverse nowrap;
@@ -391,7 +398,7 @@
         div.navbar-left {
             
             display: flex;
-            flex-flow: column nowrap;
+            flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
             width: 100%;
@@ -401,7 +408,7 @@
         nav.navbar div.navbar-left a{
         
             align-self: flex-start;
-            margin: auto;
+            margin: 2%;
         }
 
         nav.navbar div.navbar-left a p {
@@ -424,16 +431,17 @@
     }
 
     @media (max-width:500px) and (min-width:0px) {
- 
+
         div.parent{
-            width: 100%;
+            flex-flow: column nowrap;
         }
+
+        
         
         nav.navbar{
             position: relative;
             justify-content: flex-end;
             align-items: center;
-            height: 100%;
             width: 100%;
 
 
@@ -472,8 +480,9 @@
             align-self: center;
             width: 40%;
         }
-
-      section.section-top{
+       
+              
+         section.section-top{
       
         }
 
