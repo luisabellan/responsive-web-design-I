@@ -502,7 +502,8 @@ section p {
 
     nav.navbar{
         flex-flow: column-reverse nowrap;
-        height: 20%;
+        height: 10%;
+        padding-top: 22%;
 
     }
 
@@ -535,6 +536,7 @@ section p {
     div.navbar-right{
         align-self: center;
         order: 2;
+        padding-bottom: 2%;
 
     }
 
@@ -584,7 +586,10 @@ section p {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 40%;
+    margin-top: -20%;
     background-color: rgb(31, 63, 202);
+
    }
   
 
@@ -638,8 +643,6 @@ section p {
         margin-left: auto;
         margin-right: auto;
         align-self: center;
-        margin-top: 2%;
-        margin-bottom: 2%;
         border-top: 1px solid rgb(77, 75, 75);
         padding-top: 5%;
         padding-bottom: 2%;
@@ -656,6 +659,7 @@ section p {
         display: flex;
         width: 100%;
         justify-content: center;
+
         
     }
     nav.navbar div.navbar-right .logo {
@@ -678,12 +682,11 @@ section p {
         flex: 1;
         flex-direction: row nowrap;
         justify-content: space-between;
-        margin-top: 3%;
+
     }
 
     div.navbar-right div.navbar-right-logo {
         align-self: flex-start;
-        height: 52px;
         /* flex: 1; */
     }
 

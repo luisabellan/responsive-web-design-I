@@ -296,7 +296,11 @@
     @media (max-width:500px) and (min-width:0px) { 
 
 
+        .parent{
+            flex-flow: column nowrap;
+        }
 
+        
         .section-middle {
         
             flex-flow: column wrap;
@@ -374,31 +378,35 @@
         margin-bottom: 1%;
     }
 
+     .icon{
+            display: none; /* icon */
+        }
 
     @media (max-width:800px){
 
-        div.parent{
-            width: 100%;
-
-            flex-flow: column nowrap;
-        }
-
+        div.container{
+        width: 100%;
+        flex-flow: column-reverse nowrap;
         }
         nav.navbar{
-            flex-flow: column-reverse nowrap;
+            flex-flow: column nowrap;
             width: 100%;
             padding-top: 5%;
-            height: 15%;
+            height: 20%;
         }
 
         div.navbar-right{
             height: 0%;
             flex: 0;
         }
+
+        .icon{
+            display: none; /* icon */
+        }
         div.navbar-left {
             
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
             width: 100%;
@@ -408,7 +416,7 @@
         nav.navbar div.navbar-left a{
         
             align-self: flex-start;
-            margin: 2%;
+            margin: auto;
         }
 
         nav.navbar div.navbar-left a p {
@@ -431,18 +439,21 @@
     }
 
     @media (max-width:500px) and (min-width:0px) {
-
+ 
         div.parent{
+            width: 100%;
             flex-flow: column nowrap;
         }
-
-        
         
         nav.navbar{
             position: relative;
+            flex-flow: column-reverse nowrap;
             justify-content: flex-end;
             align-items: center;
+            height: 100%;
             width: 100%;
+            padding-bottom: 20%;
+            padding-top: 20%;
 
 
 
@@ -452,6 +463,7 @@
             
             display: flex;
             flex-flow: column nowrap;
+            order: -1;
 
         }
     
@@ -466,10 +478,10 @@
         }
         nav.navbar div.navbar-right {
 
+            flex-flow: row nowrap;
             padding-top: 2%;
-            order: 2;
             flex: 0;
-            order: 2;
+            order: 1;
             margin-top: -5%;
             
 
@@ -479,12 +491,12 @@
             
             align-self: center;
             width: 40%;
+            order: 1;
         }
+
        
-              
-         section.section-top{
+
       
-        }
 
         section.section-bottom{
             flex-flow: column nowrap;
@@ -512,30 +524,12 @@
         img.services-info-img{
             margin-top: 20%;
         }
+
+        .icon{
+            display: flex; /* icon */
+        }
     }
-   /*  .jumbo-left button {
-        margin-bottom: 15%;
-    }
-
-    .first-section, .second-section{
-        flex-direction: column;
-    }
-
-    .first-section-left p, .first-section-right p, .second-section-left p, .second-section-right p,  {
-        margin-right: 0%;
-    }
-
-    .sections h2{
-        margin-top: 5%;
-
-    }
-
-    .second-section h2 {
-        margin-top: 5%;
-
-    }
-
-    .second-section {
-        border-bottom: 4px solid black;
-    } */
+   
+    /* TODO make icon stay on the right*/
+    
     
