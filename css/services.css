@@ -1,99 +1,254 @@
-/* services.html styles */
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+
+    body {
+        line-height: 1;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    blockquote,
+    q {
+        quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    /* Set every element's box-sizing to border-box */
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+
+        height: 100%;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Bangers', cursive;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+
+
+    body {
+
+        margin: 0;
+    }
+
+
+    /* stretch: Research CSS animations and see how you could implement some ideas when hovering over buttons or navigation items */
+    header nav a p:hover {
+
+        animation-name: border;
+        animation-iteration-count: initial;
+        animation-duration: 1s;
+    }
+
+
+    div.parent {
+        display: flex;
+        flex-direction: column;
+        
+    }
 
 
 
-.container {
 
-    width: 100%;
 
-}
+
+
+  
     .navbar {
-    
+        position: fixed;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        background-color: rgb(31, 63, 202);
+        height: 10%;
+        z-index: 1;
+
     }
     
     .navbar-left{
-      
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex: 2;
+        order: 1;
+        margin-left: 2%;   
+     
     }
     
     .navbar-left a {
        
+        color: gray;
+        flex: 1;
+        text-decoration: none;
+        display: flex;
+    }
+    .navbar-right {
+        flex: 1;
+        order: 2;
+    }
+        
+    .navbar-right a {
+        align-self: flex-end;
+        margin-bottom: 2%;
+    }
+    
+
+
+    @keyframes border {
+        from {
+            border-bottom: 0px solid gray;
+    
+        }
+    
+        to {
+            border-bottom: 1px solid gray;
+    
+        }
+    }
+    
+    .navbar-left a p:hover {
+    
+        animation: border;
     
     }
-    div.navbar-right {
-        margin-right: 30px;
-        
-    }
-    div.navbar-right a {
-        align-self: center;
-        margin-bottom: 2%;
-        
-    }
-
-    .navbar-left a:hover}{
-        text-decoration: none;
-        animation:none;
-
-    }
-    div.navbar-right a:hover {
-        text-decoration: none;
-        animation: none;
-    }
-
-}
-
-.navbar-left{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex: 2;
-}
-
-.navbar-left a {
-    color: gray;
-    text-decoration: none;
-    flex: 1;
-    flex-basis: 40%;
-    display: flex;
+    
+    
 
 
-}
-.navbar-right {
-    margin-right: 30px;
-}
-.navbar-right a {
-    align-self: center;
-    margin-bottom: 2%;
-    animation: none;
-}
-}
 
-@keyframes border {
-    from {
-        border-bottom: 0px dashed gray;
-
-    }
-
-    to {
-        border-bottom: 4px solid gray;
-
-    }
-}
-
-/* stretch: Research CSS animations and see how you could implement some ideas when hovering over buttons or navigation items */
-header nav a:hover {
-
-    border-bottom: 4px solid gray;
-    animation-name: border;
-    animation-iteration-count: initial;
-    animation-duration: 1s;
-}
-
-
-div.parent {
-	display: flex;
-	flex-direction: column;
-	
-}
 img.services-header-img {
 	display: flex;
 	justify-content: space-evenly;
@@ -119,11 +274,12 @@ img.services-header-img{
 	
 }
 .section-top h2{
-	font-size: 130%;
+    font-size: 130%;
+    margin-top: 10%;
 }
 
 .section-top p{
-	margin-bottom: 3%;
+	margin-bottom: 10%;
 
 }
 
@@ -184,67 +340,93 @@ margin-top: 20%;
 }
 
 img.services-info-img{
-	width: 47%;
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+    margin-right: 3%;
+}
+.section-bottom section p{
+    margin-bottom: 1%;
 }
 
 
+ @media (max-width:800px){
 
- @media (max-width:800){
-
-div.container{
-    width: 800px;
-}
+    div.container{
+    width: 100%;
+    }
     nav.navbar{
-        flex-flow: column-reverse wrap;
+        flex-flow: column-reverse nowrap;
         width: 100%;
+        height: 10%;
     }
     div.navbar-left {
         
         position: fixed;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
         justify-content: center;
-
         align-items: center;
         width: 100%;
+        margin-top: 6%;
+        height: 20%;
 
     }
 
     nav.navbar div.navbar-left a{
        
-
+        align-self: flex-start;
+        margin: auto;
     }
 
-    div.navbar-right{
-        order: 1;
-
+    nav.navbar div.navbar-left a p {
+        padding-top: 20%;
     }
+
+    nav.navbar div.navbar-left a p:hover{
+    
+      
+    }
+
+    nav.navbar div.navbar-right {
+
+        margin-bottom: 12%;
+    }
+
+    div.parent .section-top  {
+        margin-top: 20%;
+    }
+}
 
     @media (max-width:500px) and (min-width:0px) {
  
-        .container{
+        div.parent{
             width: 500px;
         }
         
-       nav.navbar {
-        position: relative;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color: rgb(31, 63, 202);
-       }
-    
+        nav.nav.navbar{
+            position: relative;
+            display: flex;
+            flex-flow: column-reverse nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: rgb(31, 63, 202);
+        }
         nav.navbar div.navbar-left {
             
             align-self: center;
             display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
+            flex-direction: column;
+            margin-right: 60%;
             width: 100%;
-            order: 1;
+            order:1;
         }
+    
+     
+        
+    
+    
     
         nav.navbar div.navbar-left a {
             box-sizing: content-box;
@@ -253,11 +435,6 @@ div.container{
             margin-left: auto;
             margin-right: auto;
             align-self: center;
-            margin-top: 2%;
-            margin-bottom: 2%;
-            border-top: 1px solid rgb(77, 75, 75);
-            padding-top: 5%;
-            padding-bottom: 2%;
     
             
           
@@ -272,41 +449,35 @@ div.container{
             align-self: center;
             width: 100%;
             margin: auto;
-        }
-    
-        .jumbo-left button {
-            margin-bottom: 15%;
-        }
-    
-        .sections h2{
-            margin-top: 15%;
-    
-        }
-    
-        .second-section h2 {
-            margin-top: 15%;
-    
-        }
-    
-        .second-section {
-            border-bottom: 4px solid black;
-        }
-    
-        /* .contact{
-            border-top: 2px solid black;
-        } */
-    }
-      
-    
 
-    .navbar-left{
+        }
+
+        div.section-top h2 {
+            margin-top: 30%;
+        }
+   /*  .jumbo-left button {
+        margin-bottom: 15%;
+    }
+
+    .first-section, .second-section{
+        flex-direction: column;
+    }
+
+    .first-section-left p, .first-section-right p, .second-section-left p, .second-section-right p,  {
+        margin-right: 0%;
+    }
+
+    .sections h2{
+        margin-top: 5%;
 
     }
 
-    .navbar-right{
+    .second-section h2 {
+        margin-top: 5%;
 
     }
 
-
+    .second-section {
+        border-bottom: 4px solid black;
+    } */
 }
-

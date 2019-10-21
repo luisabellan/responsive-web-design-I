@@ -1,0 +1,388 @@
+/* services.html styles */
+
+
+
+.container {
+
+    width: 100%;
+
+}
+    .navbar {
+    
+    }
+    
+    .navbar-left{
+      
+    }
+    
+    .navbar-left a {
+       
+    
+    }
+    div.navbar-right {
+        margin-right: 30px;
+        
+    }
+    div.navbar-right a {
+        align-self: center;
+        margin-bottom: 2%;
+        
+    }
+
+    .navbar-left a:hover}{
+        text-decoration: none;
+        animation:none;
+
+    }
+    div.navbar-right a:hover {
+        text-decoration: none;
+        animation: none;
+    }
+
+}
+
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 2;
+}
+
+.navbar-left a {
+    color: gray;
+    text-decoration: none;
+    flex: 1;
+    flex-basis: 40%;
+    display: flex;
+
+
+}
+.navbar-right {
+    margin-right: 30px;
+}
+.navbar-right a {
+    align-self: center;
+    margin-bottom: 2%;
+    animation: none;
+}
+}
+
+@keyframes border {
+    from {
+        border-bottom: 0px dashed gray;
+
+    }
+
+    to {
+        border-bottom: 4px solid gray;
+
+    }
+}
+
+/* stretch: Research CSS animations and see how you could implement some ideas when hovering over buttons or navigation items */
+header nav a:hover {
+
+    border-bottom: 4px solid gray;
+    animation-name: border;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
+}
+
+
+div.parent {
+	display: flex;
+	flex-direction: column;
+	
+}
+img.services-header-img {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	margin-right: 0%;
+	margin-top: 0%;
+	z-index: -1;
+}
+	
+img.services-header-img{
+	display: flex;
+
+}
+.section-top{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-bottom: 1px solid black;
+    flex:1;
+    width: 90%;
+    margin: 10% auto;
+	
+	
+}
+.section-top h2{
+	font-size: 130%;
+}
+
+.section-top p{
+	margin-bottom: 3%;
+
+}
+
+.section-middle{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+    flex:1;
+    margin-top: 2%;
+    
+}
+
+
+.box {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	width: 44%;
+	border: 1px solid black;
+	padding: 1%;
+	margin-bottom: 3%;
+	margin-left: 2%;
+	
+}
+.box button {
+	align-self: flex-start;
+	margin-top: 6%;
+}
+
+
+
+.section-bottom{
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	border-top: 1px solid black;
+    flex:1;
+    margin: 0 0 2% 5%;
+	
+}
+
+
+.section-bottom h2{
+margin-top: 20%;
+}
+
+
+.section-bottom p {
+	margin-top: 2%;
+	width: 68%;
+}
+
+.section-bottom li {
+	list-style: disc inside;
+	padding-top: 6%;
+	line-height: 140%;
+}
+
+img.services-info-img{
+	width: 47%;
+}
+
+
+
+ @media (max-width:800px){
+
+div.container{
+    width: 800px;
+}
+    nav.navbar{
+        flex-flow: column-reverse wrap;
+        width: 100%;
+    }
+    div.navbar-left {
+        
+        position: fixed;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+
+        align-items: center;
+        width: 100%;
+
+    }
+
+    nav.navbar div.navbar-left a{
+       
+
+    }
+
+    div.navbar-right{
+        order: 1;
+
+    }
+
+    @media (max-width:500px) and (min-width:0px) {
+ 
+        .container{
+            width: 500px;
+        }
+        
+       nav.navbar {
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(31, 63, 202);
+       }
+    
+        nav.navbar div.navbar-left {
+            
+            align-self: center;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 100%;
+            order: 1;
+        }
+    
+        nav.navbar div.navbar-left a {
+            box-sizing: content-box;
+            justify-content: center;
+            padding-left: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            border-top: 1px solid rgb(77, 75, 75);
+            padding-top: 5%;
+            padding-bottom: 2%;
+    
+            
+          
+        }
+        nav.navbar div.navbar-right {
+            width: auto;
+            order: 2;
+        }
+    
+        div.navbar-right a {
+            
+            align-self: center;
+            width: 100%;
+            margin: auto;
+        }
+    
+        .jumbo-left button {
+            margin-bottom: 15%;
+        }
+    
+        .sections h2{
+            margin-top: 15%;
+    
+        }
+    
+        .second-section h2 {
+            margin-top: 15%;
+    
+        }
+    
+        .second-section {
+            border-bottom: 4px solid black;
+        }
+    
+        /* .contact{
+            border-top: 2px solid black;
+        } */
+    }
+      
+    
+
+    .navbar-left{
+
+    }
+
+    .navbar-right{
+
+    }
+
+
+}
+@media (max-width:500px) {}
+    .container{
+        width: 500px;
+    }
+
+    nav.navbar {
+    position: relative;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(31, 63, 202);
+    }
+
+    nav.navbar div.navbar-left {
+        
+        align-self: center;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav.navbar div.navbar-left a {
+        box-sizing: content-box;
+        justify-content: center;
+        padding-left: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border-top: 1px solid rgb(77, 75, 75);
+        padding-top: 5%;
+        padding-bottom: 2%;
+
+        
+    
+    }
+    nav.navbar div.navbar-right {
+        width: auto;
+    }
+
+    div.navbar-right a {
+        
+        align-self: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .jumbo-left button {
+        margin-bottom: 15%;
+    }
+
+    .first-section, .second-section{
+        flex-direction: column;
+    }
+
+    .first-section-left p, .first-section-right p, .second-section-left p, .second-section-right p,  {
+        margin-right: 0%;
+    }
+
+    .sections h2{
+        margin-top: 5%;
+
+    }
+
+    .second-section h2 {
+        margin-top: 5%;
+
+    }
+
+    .second-section {
+        border-bottom: 4px solid black;
+    }
+}
