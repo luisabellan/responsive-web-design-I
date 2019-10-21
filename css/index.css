@@ -226,6 +226,7 @@ button:hover {
     flex: 1;
     text-decoration: none;
     display: flex;
+    
 
 
 }
@@ -471,7 +472,7 @@ section p {
 
 
 /* tablet*/
-@media (max-width:800px) {
+@media (max-width:669px) {
 
     .container {
         width: 100%;
@@ -480,7 +481,7 @@ section p {
 
     nav.navbar{
         flex-flow: column-reverse nowrap;
-        height: 20%;
+        height: 12%;
 
     }
 
@@ -489,19 +490,18 @@ section p {
         width: 100%;
         justify-content: space-around;        
         order: 1;
-        margin-top: 5%;
     }
     
     div.navbar-left a {
        
         flex-flow: column wrap;
-        margin-bottom: 1%;
+        margin-bottom: 8%;
         width: 100%;
     }
     div.navbar-right{
-        margin-top: 5%;
         align-self: center;
         order: 2;
+
     }
 
     div.second-section {
@@ -510,13 +510,15 @@ section p {
     }
 
     div.first-section {
-        flex-direction: column;
+        flex-flow: column nowrap;
 
     }
 
     div.jumbo {
         flex-flow: row wrap;
-        padding-top: 30%;
+        padding-top: 25%;
+        margin-bottom: 10%;
+
     }
 
     div.jumbo-right {
@@ -534,7 +536,7 @@ section p {
 @media (max-width:500px) and (min-width:0px) {
  
     div.container{
-        width: 500px;
+        width: 1000px;
     }
     
    nav.navbar {

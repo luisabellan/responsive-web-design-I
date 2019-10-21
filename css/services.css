@@ -1,460 +1,509 @@
-    /* http://meyerweb.com/eric/tools/css/reset/ 
-    v2.0 | 20110126
-    License: none (public domain)
-    */
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+        */
 
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-    }
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
 
-    /* HTML5 display-role reset for older browsers */
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-        display: block;
-    }
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
 
-    body {
-        line-height: 1;
-    }
+        body {
+            line-height: 1;
+        }
 
-    ol,
-    ul {
-        list-style: none;
-    }
+        ol,
+        ul {
+            list-style: none;
+        }
 
-    blockquote,
-    q {
-        quotes: none;
-    }
+        blockquote,
+        q {
+            quotes: none;
+        }
 
-    blockquote:before,
-    blockquote:after,
-    q:before,
-    q:after {
-        content: '';
-        content: none;
-    }
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
 
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
 
-    /* Set every element's box-sizing to border-box */
-    * {
-        box-sizing: border-box;
-    }
+        /* Set every element's box-sizing to border-box */
+        * {
+            box-sizing: border-box;
+        }
 
-    html,
-    body {
+        html,
+        body {
 
-        height: 100%;
-        font-family: 'Titillium Web', sans-serif;
-    }
+            height: 100%;
+            font-family: 'Titillium Web', sans-serif;
+        }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: 'Bangers', cursive;
-        letter-spacing: 1px;
-        margin-bottom: 15px;
-    }
-
-
-    body {
-
-        margin: 0;
-    }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
 
 
+        body {
+
+            margin: 0;
+        }
+
+
+    
+
+        div.parent {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+
+
+
+
+
+    
+        .navbar {
+            position: fixed;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            width: 100%;
+            align-items: center;
+            background-color: rgb(31, 63, 202);
+            height: 10%;
+            z-index: 1;
+
+        }
+        
+        .navbar-left{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex: 2;
+            order: 1;
+            margin-left: 2%;   
+        
+        }
+        
+        .navbar-left a {
+        
+            color: gray;
+            flex: 1;
+            text-decoration: none;
+            display: flex;
+        }
+
+        
     /* stretch: Research CSS animations and see how you could implement some ideas when hovering over buttons or navigation items */
-    header nav a p:hover {
+        header nav a p:hover {
 
-        animation-name: border;
-        animation-iteration-count: initial;
-        animation-duration: 1s;
+            animation-name: border;
+            animation-iteration-count: initial;
+            animation-duration: 1s;
+        }
+
+        .navbar-right {
+            flex: 1;
+            order: 2;
+        }
+            
+        .navbar-right a {
+            align-self: flex-end;
+            margin-bottom: 2%;
+        }
+        
+
+
+        @keyframes border {
+            from {
+                border-bottom: 0px solid gray;
+        
+            }
+        
+            to {
+                border-bottom: 1px solid gray;
+        
+            }
+        }
+        
+        .navbar-left a p:hover {
+        
+            animation: border;
+        
+        }
+        
+        
+        
+
+    img.services-header-img {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-right: 0%;
+        margin-top: 0%;
+        z-index: -1;
     }
+        
+    img.services-header-img{
+        display: flex;
 
-
-    div.parent {
+    }
+    .section-top{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        border-bottom: 1px solid black;
+        flex:1;
+        width: 90%;
+        margin: 10% auto;
         
+        
+    }
+    .section-top h2{
+        font-size: 130%;
+        margin-top: 10%;
+    }
+
+    .section-top p{
+        margin-bottom: 10%;
+
+    }
+
+    .section-middle{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        flex:1;
+        margin-top: 2%;
+        
+    }
+    @media (max-width:500px) and (min-width:0px) { 
+
+        .section-middle {
+        
+            flex-flow: column wrap;
+            justify-content: center;
+            
+        }
+
+        .box {
+            box-sizing: content-box;
+            width: 40%;
+        }
+        .box p {
+            width: 90%;
+            margin: 0;
+        }
+
+        .box button {
+            align-self: center;
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        width: 44%;
+        border: 1px solid black;
+        padding: 1%;
+        margin-bottom: 3%;
+        margin-left: 2%;
+        
+    }
+    .box button {
+        align-self: flex-start;
+        margin-top: 6%;
     }
 
 
 
+    .section-bottom{
 
-
-
-
-  
-    .navbar {
-        position: fixed;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
-        width: 100%;
-        align-items: center;
-        background-color: rgb(31, 63, 202);
-        height: 10%;
-        z-index: 1;
-
-    }
-    
-    .navbar-left{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex: 2;
-        order: 1;
-        margin-left: 2%;   
-     
-    }
-    
-    .navbar-left a {
-       
-        color: gray;
-        flex: 1;
-        text-decoration: none;
-        display: flex;
-    }
-    .navbar-right {
-        flex: 1;
-        order: 2;
-    }
+        border-top: 1px solid black;
+        flex:1;
+        margin: 0 0 2% 5%;
         
-    .navbar-right a {
-        align-self: flex-end;
-        margin-bottom: 2%;
     }
-    
 
 
-    @keyframes border {
-        from {
-            border-bottom: 0px solid gray;
-    
-        }
-    
-        to {
-            border-bottom: 1px solid gray;
-    
-        }
+    .section-bottom h2{
+    margin-top: 20%;
     }
-    
-    .navbar-left a p:hover {
-    
-        animation: border;
-    
+
+
+    .section-bottom p {
+        margin-top: 2%;
+        width: 68%;
     }
-    
-    
 
-
-
-img.services-header-img {
-	display: flex;
-	justify-content: space-evenly;
-	width: 100%;
-	margin-right: 0%;
-	margin-top: 0%;
-	z-index: -1;
-}
-	
-img.services-header-img{
-	display: flex;
-
-}
-.section-top{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	border-bottom: 1px solid black;
-    flex:1;
-    width: 90%;
-    margin: 10% auto;
-	
-	
-}
-.section-top h2{
-    font-size: 130%;
-    margin-top: 10%;
-}
-
-.section-top p{
-	margin-bottom: 10%;
-
-}
-
-.section-middle{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-    flex:1;
-    margin-top: 2%;
-    
-}
-
-
-.box {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: space-around;
-	width: 44%;
-	border: 1px solid black;
-	padding: 1%;
-	margin-bottom: 3%;
-	margin-left: 2%;
-	
-}
-.box button {
-	align-self: flex-start;
-	margin-top: 6%;
-}
-
-
-
-.section-bottom{
-
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	border-top: 1px solid black;
-    flex:1;
-    margin: 0 0 2% 5%;
-	
-}
-
-
-.section-bottom h2{
-margin-top: 20%;
-}
-
-
-.section-bottom p {
-	margin-top: 2%;
-	width: 68%;
-}
-
-.section-bottom li {
-	list-style: disc inside;
-	padding-top: 6%;
-	line-height: 140%;
-}
-
-img.services-info-img{
-    width: 50%;
-    height: 50%;
-    margin-top: 5%;
-    margin-right: 3%;
-}
-.section-bottom section p{
-    margin-bottom: 1%;
-}
-
-
- @media (max-width:800px){
-
-    div.container{
-    width: 100%;
+    .section-bottom li {
+        list-style: disc inside;
+        padding-top: 6%;
+        line-height: 140%;
     }
-    nav.navbar{
-        flex-flow: column-reverse nowrap;
+
+    img.services-info-img{
+        width: 50%;
+        height: 50%;
+        margin-top: 5%;
+        margin-right: 3%;
+    }
+    .section-bottom section p{
+        margin-bottom: 1%;
+    }
+
+
+    @media (max-width:800px){
+
+        div.container{
         width: 100%;
-        height: 10%;
-    }
-    div.navbar-left {
+        }
+        nav.navbar{
+            flex-flow: column-reverse nowrap;
+            width: 100%;
+            padding-top: 5%;
+            height: 15%;
+        }
+
+        div.navbar-right{
+            height: 0%;
+            flex: 0;
+        }
+        div.navbar-left {
+            
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+        }
+
+        nav.navbar div.navbar-left a{
         
-        position: fixed;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 6%;
-        height: 20%;
+            align-self: flex-start;
+            margin: auto;
+        }
 
+        nav.navbar div.navbar-left a p {
+            padding-top: 2%;
+        }
+
+        nav.navbar div.navbar-left a p:hover{
+        
+        
+        }
+
+        nav.navbar div.navbar-right {
+
+        }
+
+        div.parent .section-top  {
+            margin-top: 20%;
+        
+        }
     }
-
-    nav.navbar div.navbar-left a{
-       
-        align-self: flex-start;
-        margin: auto;
-    }
-
-    nav.navbar div.navbar-left a p {
-        padding-top: 20%;
-    }
-
-    nav.navbar div.navbar-left a p:hover{
-    
-      
-    }
-
-    nav.navbar div.navbar-right {
-
-        margin-bottom: 12%;
-    }
-
-    div.parent .section-top  {
-        margin-top: 20%;
-    }
-}
 
     @media (max-width:500px) and (min-width:0px) {
  
         div.parent{
-            width: 500px;
+            width: 100%;
         }
         
-        nav.nav.navbar{
+        nav.navbar{
             position: relative;
-            display: flex;
-            flex-flow: column-reverse nowrap;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
-            width: 100%;
-            background-color: rgb(31, 63, 202);
+            height: 100%;
+
+
+
         }
         nav.navbar div.navbar-left {
+
             
-            align-self: center;
             display: flex;
-            flex-direction: column;
-            margin-right: 60%;
-            width: 100%;
-            order:1;
+            flex-flow: column nowrap;
+
         }
     
      
-        
-    
-    
-    
         nav.navbar div.navbar-left a {
-            box-sizing: content-box;
             justify-content: center;
-            padding-left: 30%;
-            margin-left: auto;
-            margin-right: auto;
-            align-self: center;
+            align-self: flex-start;
+            margin-bottom: 3%;
+
     
-            
           
         }
         nav.navbar div.navbar-right {
-            width: auto;
+
+            padding-top: 2%;
             order: 2;
+            flex: 0;
+            order: 2;
+            
+            margin-top: -5%;
+            
+
         }
     
         div.navbar-right a {
             
             align-self: center;
             width: 100%;
-            margin: auto;
-
         }
 
-        div.section-top h2 {
-            margin-top: 30%;
+      section.section-top{
+      
         }
+
+        section.section-bottom{
+            flex-flow: column nowrap;
+            margin-bottom: 50%;
+        }
+      
+
+        div.section-middle{
+            flex-direction: column nowrap;
+            display: flex;
+            align-items: center;
+            padding-bottom: 20%;
+        }
+
+        div.section-middle section.box  {
+            width: 90%;
+            margin-right: 2%;
+            flex: 1;
+        }
+
+        section .box p{
+        }
+
+
+        img.services-info-img{
+            margin-top: 20%;
+        }
+    }
    /*  .jumbo-left button {
         margin-bottom: 15%;
     }
@@ -480,4 +529,4 @@ img.services-info-img{
     .second-section {
         border-bottom: 4px solid black;
     } */
-}
+    
