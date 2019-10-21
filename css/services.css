@@ -434,6 +434,7 @@
             justify-content: flex-end;
             align-items: center;
             height: 100%;
+            width: 100%;
 
 
 
@@ -461,7 +462,6 @@
             order: 2;
             flex: 0;
             order: 2;
-            
             margin-top: -5%;
             
 
@@ -470,7 +470,7 @@
         div.navbar-right a {
             
             align-self: center;
-            width: 100%;
+            width: 40%;
         }
 
       section.section-top{

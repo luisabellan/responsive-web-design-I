@@ -165,6 +165,16 @@ body {
     margin: 0;
 }
 
+
+    /* stretch: Research CSS animations and see how you could implement some ideas when hovering over buttons or navigation items */
+    header nav a p:hover {
+
+        border-bottom: 2px solid gray;
+        animation-name: border;
+        animation-iteration-count: initial;
+        animation-duration: 1s;
+    }
+
 .container{
     max-width: 100%
 }
@@ -187,7 +197,8 @@ button:hover {
 		*it be fixed to the top of the page so that it scrolls
 		*with the user. You will want to study what z-index
 		*means in case you encounter any issues when you scroll. 
-	*/
+    */
+    
 .navbar {
     position: fixed;
     display: flex;
@@ -214,11 +225,12 @@ button:hover {
     color: gray;
     flex: 1;
     text-decoration: none;
-
     display: flex;
+    
 
 
 }
+
 
 .navbar-right {
     flex: 1;
@@ -235,20 +247,19 @@ button:hover {
 
 @keyframes border {
     from {
-        border-bottom: 0px dashed gray;
+        border-bottom: 0px solid gray;
 
     }
 
     to {
-        border-bottom: 4px solid gray;
+        border-bottom: 3px solid gray;
 
     }
 }
 
-.navbar-left a:hover {
+.navbar-left a p:hover {
 
-    
-    animation-name: none;
+    animation: none;
 
 }
 
@@ -461,46 +472,62 @@ section p {
 
 
 /* tablet*/
-@media (max-width:800px) {
+@media (max-width:669px) {
 
     .container {
         width: 100%;
 
     }
 
-    .navbar{
-        flex-direction: column-reverse;
+    nav.navbar{
+        flex-flow: column-reverse nowrap;
         height: 12%;
+
     }
-   .navbar-left a {
-        flex-flow: column-reverse wrap;
-        margin: 10%;
-        text-align: center;
+
+    div.navbar-left{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;        
+        order: 1;
+    }
+    
+    div.navbar-left a {
+       
+        flex-flow: column wrap;
+        margin-bottom: 8%;
         width: 100%;
     }
-    .navbar-right{
-        margin-top: 5%;
+    div.navbar-right{
+        align-self: center;
+        order: 2;
+
     }
 
-    .second-section {
+    div.second-section {
         flex-direction: row;
 
     }
 
-    .first-section {
-        flex-direction: row;
+    div.first-section {
+        flex-flow: column nowrap;
 
     }
 
-    .jumbo {
+    div.jumbo {
         flex-flow: row wrap;
-        padding-top: 20%;
+        padding-top: 25%;
+        margin-bottom: 10%;
+
     }
 
-    .jumbo-right {
+    div.jumbo-right {
         display: none;
     }
 
+    .first-section-left p, .first-section-right p, .second-section-left p, .second-section-right p,  {
+        margin-right: 0%;
+    }
 
 }
 
@@ -508,8 +535,8 @@ section p {
 /* mobile*/
 @media (max-width:500px) and (min-width:0px) {
  
-    .container{
-        width: 500px;
+    div.container{
+        width: 1000px;
     }
     
    nav.navbar {
@@ -521,15 +548,48 @@ section p {
     width: 100%;
     background-color: rgb(31, 63, 202);
    }
+   .first-section, .second-section{
+    flex-direction: column;
+}
+
 
     nav.navbar div.navbar-left {
         
         align-self: center;
         display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+        flex-direction: column;
+        margin-right: 60%;
         width: 100%;
+        order:1;
     }
+
+    /* nav.navbar div.navbar-left a.first{
+        order:1;
+    }
+
+    nav.navbar div.navbar-left a.second{
+        order:2;
+    }
+
+    nav.navbar div.navbar-left a.third{
+        order:3;
+    }
+
+    nav.navbar div.navbar-left a.fourth{
+        order:4;
+    }
+
+    nav.navbar div.navbar-left a.fifth{
+        order:5;
+    }
+
+    nav.navbar div.navbar-left a.sixth{
+        order:6;
+    }
+ */
+    
+
+
 
     nav.navbar div.navbar-left a {
         box-sizing: content-box;
@@ -549,6 +609,7 @@ section p {
     }
     nav.navbar div.navbar-right {
         width: auto;
+        order: 2;
     }
 
     div.navbar-right a {
@@ -562,13 +623,7 @@ section p {
         margin-bottom: 15%;
     }
 
-    .first-section, .second-section{
-        flex-direction: column;
-    }
-  
-    .first-section-left p, .first-section-right p, .second-section-left p, .second-section-right p,  {
-        margin-right: 0%;
-    }
+   
 
     .sections h2{
         margin-top: 5%;

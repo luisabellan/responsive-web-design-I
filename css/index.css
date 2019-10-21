@@ -207,7 +207,7 @@ button:hover {
     width: 100%;
     align-items: center;
     background-color: rgb(31, 63, 202);
-    height: 10%;
+    height: 20%;
     z-index: 1;
 
 }
@@ -242,6 +242,9 @@ button:hover {
     margin-bottom: 2%;
 }
 
+.navbar-right i{
+    display: none;
+}
 
 
 
@@ -451,28 +454,37 @@ section p {
 
     }
 
-    .navbar {
+    nav.navbar {
         flex-flow: row nowrap;
         justify-content: flex-start;
     }
 
-    .navbar .navbar-left{
+    nav.navbar div.navbar-left{
         display: flex;
         flex-flow: row;
     }
 
-    .navbar .navbar-left a {
+    nav.navbar div.navbar-left a {
 
         flex-flow: row wrap;
         justify-content: flex-start;
         width: 100%;
+        
 
     }
+ 
+ 
+    nav.navbar div.navbar-left p:hover{
+        border-bottom: 2px solid gray;
+        animation: none;
+    }
+
+
 }
 
 
 /* tablet*/
-@media (max-width:669px) {
+@media (max-width:800px) {
 
     .container {
         width: 100%;
@@ -481,7 +493,7 @@ section p {
 
     nav.navbar{
         flex-flow: column-reverse nowrap;
-        height: 12%;
+        height: 30%;
 
     }
 
@@ -498,10 +510,27 @@ section p {
         margin-bottom: 8%;
         width: 100%;
     }
+
+
+
+    div.navbar-left p{
+        animation: none;
+    }
+
+    div.navbar-left p:hover{
+        border: none;
+        animation: border;
+    }
+
+
     div.navbar-right{
         align-self: center;
         order: 2;
 
+    }
+
+    div.navbar-right .logo{
+        margin-top: 20%;
     }
 
     div.second-section {
@@ -536,7 +565,7 @@ section p {
 @media (max-width:500px) and (min-width:0px) {
  
     div.container{
-        width: 1000px;
+        width: 100%;
     }
     
    nav.navbar {
@@ -548,9 +577,7 @@ section p {
     width: 100%;
     background-color: rgb(31, 63, 202);
    }
-   .first-section, .second-section{
-    flex-direction: column;
-}
+  
 
 
     nav.navbar div.navbar-left {
@@ -561,7 +588,11 @@ section p {
         margin-right: 60%;
         width: 100%;
         order:1;
+        flex: 1;
+        display: flex; 
     }
+
+  
 
     /* nav.navbar div.navbar-left a.first{
         order:1;
@@ -607,23 +638,84 @@ section p {
         
       
     }
-    nav.navbar div.navbar-right {
-        width: auto;
-        order: 2;
+    nav.navbar div.navbar-left a:last-child {
+        border-bottom: 1px solid rgb(77, 75, 75);
+        padding-bottom: 5%;
+
+    }  
+    nav.navbar div.navbar-right{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    nav.navbar div.navbar-right .logo {
+        align-self: center;
+        margin-left: 70%;
+        
     }
 
-    div.navbar-right a {
-        
-        align-self: center;
-        width: 100%;
-        margin: auto;
+    nav.navbar div.navbar-right .logo{
+
     }
+
+    nav.navbar div.navbar-right i {
+        display: flex;
+        margin-right: 20px;
+
+    }
+
+   
+    nav.navbar div.navbar-right {
+        align-self: flex-start;
+        order: 1;
+        flex: 1;
+        flex-direction: row nowrap;
+        justify-content: space-between;
+        margin-top: 3%;
+    }
+
+    div.navbar-right div.navbar-right-logo {
+        width: 40%;
+        align-self: flex-start;
+        height: 52px;
+        /* flex: 1; */
+    }
+
+    div.navbar-right a{
+        text-decoration: none;
+
+    }
+    div.navbar-right div.navbar-right-icon {
+        order: 2;
+        width: 40%;
+        flex: 1; 
+        align-self: flex-end;
+        height: 52px;
+        text-decoration: none;
+    }
+    /*delete*/
+    div.navbar-right i{
+        display: flex;
+    }
+    
+    
+    }
+    .icon{
+        color: black;
+        align-self: flex-end;
+        display: flex;
+        width: 40%;
+    }
+
 
     .jumbo-left button {
         margin-bottom: 15%;
     }
 
-   
+    .first-section, .second-section{
+        flex-direction: column;
+    }
 
     .sections h2{
         margin-top: 5%;
@@ -639,6 +731,7 @@ section p {
         border-bottom: 4px solid black;
     }
 
+  
 
     /* .contact{
         border-top: 2px solid black;

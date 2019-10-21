@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -18,17 +19,22 @@
     <header>
       <nav class="navbar">
         <div class="navbar-left">
-          <a href="./services.html"><p>Services</p></a>
+          <a class="first" href="./services.html"><p>Services</p></a>
           <!-- This points the services a href="" to services.html --->
-          <a href="#"><p>Product</p></a>
-          <a href="#"><p>Vision</p></a>
-          <a href="#"><p>Features</p></a>
-          <a href="#"><p>About</p></a>
-          <a href="#"><p>Contact</p></a>
+          <a class="second" href="#"><p>Product</p></a>
+          <a class="third" href="#"><p>Vision</p></a>
+          <a class="fourth" href="#"><p>Features</p></a>
+          <a class="fifth" href="#"><p>About</p></a>
+          <a class="sixth" href="#"><p>Contact</p></a>
         </div>
 
         <div class="navbar-right">
-          <a><img class="logo" src="img/logo.png" alt="Great Idea Company logo."></a>
+          <div>
+          <a><img class="logo" src="img/logo.png" alt="Great Idea Company logo."></a></div>
+          <div class="menu"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars fa-2x"></i>
+            </a>
+          </div>
         </div>
 
       </nav>
@@ -119,7 +125,7 @@
     </section>
 
 
-    <footer>Copyright Great classea 2018</footer>
+    <footer>Copyright Great Idea 2019</footer>
 
   </div>
 </body>
