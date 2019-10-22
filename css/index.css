@@ -166,7 +166,6 @@ body {
 }
 
 
-    /* stretch: Research CSS animations and see how you could implement some ideas when hovering over buttons or navigation items */
     header nav a p:hover {
 
         border-bottom: 2px solid gray;
@@ -663,8 +662,8 @@ section p {
         
     }
     nav.navbar div.navbar-right .logo {
-        margin-left: 50%;
-        width: 60%;
+        margin-left: 35%;
+        width: 80%;
         align-self: flex-start;
         height: 52px;
         /* flex: 1; */

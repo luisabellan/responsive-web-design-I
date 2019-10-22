@@ -166,8 +166,9 @@
     
 
         div.parent {
+            max-width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-flow: column nowrap;
             
         }
 
@@ -178,15 +179,16 @@
 
     
         .navbar {
-            position: fixed;
+            position: relative;
             display: flex;
-            flex-flow: row-reverse nowrap;
+            flex-flow: column-reverse nowrap;
             justify-content: space-around;
             width: 100%;
             align-items: center;
+            align-self: auto;
             background-color: rgb(31, 63, 202);
             padding-top: 5%;
-            height: 20%;
+            height: 25%;
             z-index: 1;
 
         }
@@ -197,7 +199,8 @@
             justify-content: space-around;
             flex: 2;
             order: 1;
-            margin-left: 2%;   
+            margin-left: 2%; 
+             
         
         }
         
@@ -218,17 +221,24 @@
             animation-duration: 1s;
         }
 
-        .navbar-right {
+        header  nav.navbar div.navbar-right {
             flex: 1;
             order: 2;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+           
         }
             
         .navbar-right a {
-            align-self: flex-end;
             margin-bottom: 2%;
         }
         
-
+        .navbar-right i{
+            display: none;
+        }
+        
 
         @keyframes border {
             from {
@@ -244,12 +254,15 @@
         
         .navbar-left a p:hover {
         
-            animation: border;
+            animation: none;
         
         }
         
         
-        
+        .sections{
+            display: flex;
+            flex-flow: column nowrap;
+        }
 
     img.services-header-img {
         display: flex;
@@ -270,7 +283,7 @@
         justify-content: space-around;
         border-bottom: 1px solid black;
         flex:1;
-        width: 90%;
+        width: 100%;
         margin: 10% auto;
         
         
@@ -384,20 +397,23 @@
 
     @media (max-width:800px){
 
-        div.container{
-        width: 100%;
-        flex-flow: column-reverse nowrap;
+        div.parent{
+            width: 100%;
+            flex-flow: column nowrap;
         }
         nav.navbar{
             flex-flow: column nowrap;
             width: 100%;
             padding-top: 5%;
-            height: 20%;
+            height: 30%;
         }
 
         div.navbar-right{
             height: 0%;
-            flex: 0;
+            flex: 1;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
         }
 
         .icon{
@@ -421,6 +437,7 @@
 
         nav.navbar div.navbar-left a p {
             padding-top: 2%;
+            
         }
 
         nav.navbar div.navbar-left a p:hover{
@@ -432,82 +449,133 @@
 
         }
 
-        div.parent .section-top  {
-            margin-top: 20%;
-        
+        .img.services-info-img {
+
+
+
+        }
+        div.parent .sections .section-top  {
+
+        margin-top: 20%;
+        }
+
+        .sections{
+            display: flex;
+            justify-content: center;
+            flex-flow: column wrap;
         }
     }
 
     @media (max-width:500px) and (min-width:0px) {
  
+        html{
+            width: 100%;
+        }
+
         div.parent{
             width: 100%;
+            display: flex;
             flex-flow: column nowrap;
         }
         
-        nav.navbar{
+        /* por aquí*/
+         div.parent div.container{
+            flex-flow: column nowrap;
+            display: flex;
+            justify-content: center;
+            flex-flow: row nowrap;
+          
+        } 
+        
+        div.parent nav.navbar{
+            box-sizing: border-box;
             position: relative;
-            flex-flow: column-reverse nowrap;
-            justify-content: flex-end;
+            flex-flow: column nowrap;
+            justify-content: center;            
             align-items: center;
-            height: 100%;
             width: 100%;
-            padding-bottom: 20%;
-            padding-top: 20%;
+            height: 100%;
+           
+
+            height: 100%;
+            margin-top: 0%;
+            background-color: rgb(31, 63, 202);
+           
 
 
 
         }
-        nav.navbar div.navbar-left {
+
+      
+        div.parent nav.navbar div.navbar-left {
 
             
             display: flex;
-            flex-flow: column nowrap;
-            order: -1;
-
+            
+            order: 3;
+            width: 100%;
+            /* display: none;  */ /* hidden in mobile view , click on menu item will show it*/
+         
         }
-    
+        .icon{
+            display: flex; /* icon */
+            order:2;
+            text-decoration: none;
+                      
+        }
+        .sections{
+            margin-top: 0%;
+            padding-top: 0%;
+        }
      
-        nav.navbar div.navbar-left a {
+        div.parent nav.navbar div.navbar-left a {
+            display: flex;
+            flex-flow: row-reverse nowrap;
             justify-content: center;
-            align-self: flex-start;
-            margin-bottom: 3%;
+            align-self: center;
+            margin-left: auto;
+            margin-left: 0%;
+            margin-top: 3%;
+            padding-bottom: 7%;
 
     
           
         }
-        nav.navbar div.navbar-right {
-
-            flex-flow: row nowrap;
-            padding-top: 2%;
-            flex: 0;
-            order: 1;
-            margin-top: -5%;
-            
-
-        }
-    
-        div.navbar-right a {
-            
+       
+        div.parent  div.navbar-right{
             align-self: center;
-            width: 40%;
+            order: 2;
+            flex: 1;
+            flex-direction: row nowrap;
+            justify-content: center;
+        }
+        div.parent div.navbar-right .logo {
+            width: 100%;
             order: 1;
         }
 
        
+        div.sections{
+            display: flex;
+            flex-flow: column nowrap;
+        }
 
-      
+        div.sections section.section-top{
+
+        }
 
         section.section-bottom{
-            flex-flow: column nowrap;
+            flex-flow: row nowrap;
             margin-bottom: 50%;
         }
       
 
         div.section-middle{
-            flex-direction: column nowrap;
+            flex-direction: row nowrap;
             display: flex;
             align-items: center;
+            width:100%;
+
             padding-bottom: 20%;
         }
 
@@ -525,9 +593,7 @@
             margin-top: 20%;
         }
 
-        .icon{
-            display: flex; /* icon */
-        }
+      
     }
    
     /* TODO make icon stay on the right*/
