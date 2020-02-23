@@ -1,0 +1,601 @@
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+        */
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* Set every element's box-sizing to border-box */
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+
+            height: 100%;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+
+        body {
+
+            margin: 0;
+        }
+
+
+    
+
+        div.parent {
+            max-width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            
+        }
+
+
+
+
+
+
+    
+        .navbar {
+            position: relative;
+            display: flex;
+            flex-flow: column-reverse nowrap;
+            justify-content: space-around;
+            width: 100%;
+            align-items: center;
+            align-self: auto;
+            background-color: rgb(31, 63, 202);
+            padding-top: 5%;
+            height: 25%;
+            z-index: 1;
+
+        }
+        
+        .navbar-left{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex: 2;
+            order: 1;
+            margin-left: 2%; 
+             
+        
+        }
+        
+        .navbar-left a {
+        
+            color: gray;
+            flex: 1;
+            text-decoration: none;
+            display: flex;
+        }
+
+        
+    /* stretch: Research CSS animations and see how you could implement some ideas when hovering over buttons or navigation items */
+        header nav a p:hover {
+
+            animation-name: border;
+            animation-iteration-count: initial;
+            animation-duration: 1s;
+        }
+
+        header  nav.navbar div.navbar-right {
+            flex: 1;
+            order: 2;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+           
+        }
+            
+        .navbar-right a {
+            margin-bottom: 2%;
+        }
+        
+        .navbar-right i{
+            display: none;
+        }
+        
+
+        @keyframes border {
+            from {
+                border-bottom: 0px solid gray;
+        
+            }
+        
+            to {
+                border-bottom: 1px solid gray;
+        
+            }
+        }
+        
+        .navbar-left a p:hover {
+        
+            animation: none;
+        
+        }
+        
+        
+        .sections{
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+    img.services-header-img {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-right: 0%;
+        margin-top: 0%;
+        z-index: -1;
+    }
+        
+    img.services-header-img{
+        display: flex;
+
+    }
+    .section-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-bottom: 1px solid black;
+        flex:1;
+        width: 100%;
+        margin: 10% auto;
+        
+        
+    }
+    .section-top h2{
+        font-size: 130%;
+        margin-top: 10%;
+    }
+
+    .section-top p{
+        margin-bottom: 10%;
+
+    }
+
+    .section-middle{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        flex:1;
+        margin-top: 2%;
+        
+    }
+    @media (max-width:500px) and (min-width:0px) { 
+
+
+        .parent{
+            flex-flow: column nowrap;
+        }
+
+        
+        .section-middle {
+        
+            flex-flow: column wrap;
+            justify-content: center;
+            
+        }
+
+        .box {
+            box-sizing: content-box;
+            width: 40%;
+        }
+        .box p {
+            width: 90%;
+            margin: 0;
+        }
+
+        .box button {
+            align-self: center;
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        width: 44%;
+        border: 1px solid black;
+        padding: 1%;
+        margin-bottom: 3%;
+        margin-left: 2%;
+        
+    }
+    .box button {
+        align-self: flex-start;
+        margin-top: 6%;
+    }
+
+
+
+    .section-bottom{
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        border-top: 1px solid black;
+        flex:1;
+        margin: 0 0 2% 5%;
+        
+    }
+
+
+    .section-bottom h2{
+    margin-top: 20%;
+    }
+
+
+    .section-bottom p {
+        margin-top: 2%;
+        width: 68%;
+    }
+
+    .section-bottom li {
+        list-style: disc inside;
+        padding-top: 6%;
+        line-height: 140%;
+    }
+
+    img.services-info-img{
+        width: 50%;
+        height: 50%;
+        margin-top: 5%;
+        margin-right: 3%;
+    }
+    .section-bottom section p{
+        margin-bottom: 1%;
+    }
+
+     .icon{
+            display: none; /* icon */
+        }
+
+    @media (max-width:800px){
+
+        div.parent{
+            width: 100%;
+            flex-flow: column nowrap;
+        }
+        nav.navbar{
+            flex-flow: column nowrap;
+            width: 100%;
+            padding-top: 5%;
+            height: 30%;
+        }
+
+        div.navbar-right{
+            height: 0%;
+            flex: 1;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+        }
+
+        .icon{
+            display: none; /* icon */
+        }
+        div.navbar-left {
+            
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+        }
+
+        nav.navbar div.navbar-left a{
+        
+            align-self: flex-start;
+            margin: auto;
+        }
+
+        nav.navbar div.navbar-left a p {
+            padding-top: 2%;
+            
+        }
+
+        nav.navbar div.navbar-left a p:hover{
+        
+        
+        }
+
+        nav.navbar div.navbar-right {
+
+        }
+
+        .img.services-info-img {
+
+
+
+        }
+        div.parent .sections .section-top  {
+
+        margin-top: 20%;
+        }
+
+        .sections{
+            display: flex;
+            justify-content: center;
+            flex-flow: column wrap;
+        }
+    }
+
+    @media (max-width:500px) and (min-width:0px) {
+ 
+        html{
+            width: 100%;
+        }
+
+        div.parent{
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        
+        /* por aquí*/
+         div.parent div.container{
+            flex-flow: column nowrap;
+            display: flex;
+            justify-content: center;
+            flex-flow: row nowrap;
+          
+        } 
+        
+        div.parent nav.navbar{
+            box-sizing: border-box;
+            position: relative;
+            flex-flow: column nowrap;
+            justify-content: center;            
+            align-items: center;
+            width: 100%;
+            height: 100%;
+           
+
+            height: 100%;
+            margin-top: 0%;
+            background-color: rgb(31, 63, 202);
+           
+
+
+
+        }
+
+      
+        div.parent nav.navbar div.navbar-left {
+
+            
+            display: flex;
+            
+            order: 3;
+            width: 100%;
+            /* display: none;  */ /* hidden in mobile view , click on menu item will show it*/
+         
+        }
+        .icon{
+            display: flex; /* icon */
+            order:2;
+            text-decoration: none;
+                      
+        }
+        .sections{
+            margin-top: 0%;
+            padding-top: 0%;
+        }
+     
+        div.parent nav.navbar div.navbar-left a {
+            display: flex;
+            flex-flow: row-reverse nowrap;
+            justify-content: center;
+            align-self: center;
+            margin-left: auto;
+            margin-left: 0%;
+            margin-top: 3%;
+            padding-bottom: 7%;
+
+    
+          
+        }
+       
+        div.parent  div.navbar-right{
+            align-self: center;
+            order: 2;
+            flex: 1;
+            flex-direction: row nowrap;
+            justify-content: center;
+        }
+        div.parent div.navbar-right .logo {
+            width: 100%;
+            order: 1;
+        }
+
+       
+        div.sections{
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        div.sections section.section-top{
+
+        }
+
+        section.section-bottom{
+            flex-flow: row nowrap;
+            margin-bottom: 50%;
+        }
+      
+
+        div.section-middle{
+            flex-direction: row nowrap;
+            display: flex;
+            align-items: center;
+            width:100%;
+
+            padding-bottom: 20%;
+        }
+
+        div.section-middle section.box  {
+            width: 90%;
+            margin-right: 2%;
+            flex: 1;
+        }
+
+        section .box p{
+        }
+
+
+        img.services-info-img{
+            margin-top: 20%;
+        }
+
+      
+    }
+   
+    /* TODO make icon stay on the right*/
+    
+    
